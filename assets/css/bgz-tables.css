@@ -1,0 +1,91 @@
+/* TABELE */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #ddd !important;
+}
+
+.table-striped > tbody > tr > td {
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-striped > thead > tr > th {
+  padding: 12px 8px;
+  text-align: center;
+}
+
+/* podwietlenie na zielono row on hover */
+.table-striped > tbody > tr:hover,
+.table-striped tr.success,
+.table-striped tr.success td {
+  background-color: #00a76d !important;
+  color: #22222288;
+}
+
+/* podswietlenie na zielono wybranego row */
+.table-show-details .table-striped > tbody > tr:hover,
+.table-show-details .table-striped tr.success,
+.table-show-details .table-striped tr.success td {
+  background-color: #00a76d !important;
+  color: #22222288;
+}
+
+.table-no-hover .table-striped > tbody > tr:hover,
+.table-no-hover .table-striped tr.success,
+.table-no-hover .table-striped tr.success td {
+  background-color: #ddd !important;
+  color: #000 !important;
+}
+
+/* dla pozycjonowania elementu after */
+.table-show-details .table-striped > tbody > tr {
+  position: relative !important;
+}
+
+/* tabela z przyciskiem musi mieć rząd w którym zmiesci się element after */
+.table-show-details tr {
+    height: 56px;
+}
+
+/* element after */
+.table-show-details-button .table-striped > tbody > tr:hover:after {
+  content: "Pokaż szczegóły";
+  position: absolute;
+  left: 30vw;
+  padding: 8px 12px;
+  background: white;
+  color: #00a76d;
+  margin-top: 12px;
+}
+
+.table-show-details-button .table-striped tr.success:after,
+.table-show-details-button .table-striped > tbody > tr.success:hover:after {
+  content: "Ukryj szczegóły";
+  position: absolute;
+  left: 30vw;
+  padding: 8px 12px;
+  background: white;
+  color: #00a76d;
+  margin-top: 12px;
+}
+
+/* dodatkowe paddingi wg projektu */
+@media screen and (min-width: 768px) {
+  .table-no-hover .table-striped > tbody > tr > td:first-of-type,
+  .table-no-hover .table-striped > thead > tr > th:first-of-type,
+  .table-no-hover .table-striped > tbody > tr > td:first-of-type,
+  .table-show-details .table-striped > tbody > tr > td:first-of-type,
+  .table-show-details .table-striped > thead > tr > th:first-of-type,
+  .table-show-details .table-striped > tbody > tr > td:first-of-type {
+    padding-left: 10rem;
+  }
+
+  .table-no-hover .table-striped > tbody > tr > td:last-of-type,
+  .table-no-hover .table-striped > thead > tr > th:last-of-type,
+  .table-no-hover .table-striped > tbody > tr > td:last-of-type,
+  .table-show-details .table-striped > tbody > tr > td:last-of-type,
+  .table-show-details .table-striped > thead > tr > th:last-of-type,
+  .table-show-details .table-striped > tbody > tr > td:last-of-type {
+    padding-right: 10rem;
+  }
+}

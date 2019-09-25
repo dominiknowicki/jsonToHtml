@@ -1,0 +1,16 @@
+{
+    "test": "test",
+    "test2": 23,
+    "obiekt1": {
+        "obj1k1": "obj1v1",
+        "obj1k2": "obj1v2"
+    },
+    "obiekt2": {
+        "obj2k1": "obj2v1",
+        "obj2k2": "obj2v2"
+    },
+    "obiektA": [
+        "a1",
+        "a2"
+    ]
+}

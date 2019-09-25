@@ -1,0 +1,137 @@
+/* KARTOTEKA KLIENTA */
+.action-button {
+  float: right;
+}
+
+.action-button button {
+  float: right;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+}
+
+@media screen and (max-width: 290px) {
+  .action-button button {
+    float: none;
+    width: 100%;
+    padding-right: 25px;
+  }
+}
+
+.results-title-margin-adjust h4 {
+  margin-bottom: 10px;
+}
+
+.margin-adjust h4 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.back-button button,
+.link-bold a {
+    margin: 20px 5px 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+.back-button button:disabled,
+.back-button button:disabled:hover,
+.link-bold a:disabled,
+.link-bold a:disabled:hover {
+    color: #666;
+    cursor: default;
+}
+
+.link-bold a {
+    margin: 20px 5px 20px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.link-bold a:hover,
+.link-bold a:focus,
+.link-bold a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.link-bold a:hover,
+.link-bold a:focus,
+.link-bold a:active,
+.back-button button:hover,
+.back-button button:focus,
+.back-button button:active {
+  color: #666;
+  text-decoration: none;
+}
+
+.back-button-container > div {
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+}
+
+.back-button-container a,
+.back-button-container button {
+    padding: 0!important;
+}
+
+.button-container-xs-fullwidth {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .button-container-xs-fullwidth {
+        margin-right: 15px; 
+        margin-left: 15px;
+    }
+    .button-container-xs-fullwidth div {
+        width: 100%;
+    }
+  
+    .button-container-xs-fullwidth > div > div > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .button-container-xs-fullwidth button {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+}
+
+.flex-right > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.flex-right > div > div {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-right > div > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1220px) {
+  .flex-right div {
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
